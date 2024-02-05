@@ -1,3 +1,4 @@
+//
 create table customers(
     id bigint primary key auto_increment,
     name varchar(50) not null,
@@ -67,6 +68,7 @@ create table orders(
     constraint fk_customerid_orders foreign key (customer_id) references customers(id) on update cascade on delete cascade
 );
 
+-- order kelyanantar ya table madhe insert honar
 CREATE table orders_items
 (
     id bigint PRIMARY KEY auto_increment,
